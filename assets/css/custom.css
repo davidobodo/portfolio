@@ -14,6 +14,16 @@
     border-left:9px solid green;
 }
 
+.my_content2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 22px;
+    border-right:9px solid red;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
 .my_icon{
     border-radius: 0 !important;
     background: none !important;
@@ -24,13 +34,9 @@
 }
 
 .main_projects{
-    height:100vh;
     display:flex;
 }
 
-#one{
-    height: 100vh;
-}
 
 
 .first_projects{
@@ -38,6 +44,7 @@
     background-color: white;
     display: flex;
     align-items: center;
+    padding:10px 40px;
 }
 
 .first_projects_inner{
@@ -58,11 +65,43 @@
     width: 100%;
 }
 
+#one .container{
+    margin-top: 20px;
+}
+
 .my_carousel{
     width: 70% !important;
     background-color: white;
     display: flex;
     align-items:center;
     padding: 0 100px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+@media (max-width:981px){
+
+    #one .content{
+        padding: 0 20px;
+    }
+    
+    .main_projects{
+        flex-direction: column;
+    }
+
+    .my_carousel{
+        width: 100% !important;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .my_content{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    
+    .my_content2{
+        order:50;   
+    }
 }
 
