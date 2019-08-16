@@ -1,0 +1,9 @@
+.text-right{
+    text-align: right;
+}
+
+.my_content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
