@@ -6,9 +6,44 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 22px;
+    border-left:9px solid green;
 }
 
 .my_icon{
     border-radius: 0 !important;
     background: none !important;
 }
+
+.skill_set li{
+    list-style: none;
+}
+
+.main_projects{
+    height:100vh;
+    display:flex;
+}
+
+#one{
+    height: 100vh;
+}
+
+
+.my_carousel_1{
+    height: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#one img{
+    height:700px
+}
+
+.my_carousel{
+    width: 70% !important;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    padding: 0 100px;
+}
+
