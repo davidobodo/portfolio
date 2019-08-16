@@ -2,6 +2,10 @@
     text-align: right;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .my_content{
     display:flex;
     flex-direction: column;
@@ -37,7 +41,7 @@
 }
 
 .first_projects_inner{
-    width: 90%;
+    width: 80%;
     height: 80%;
     margin: 0 auto;
     display: flex;
