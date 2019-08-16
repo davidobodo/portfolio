@@ -7,3 +7,8 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.my_icon{
+    border-radius: 0 !important;
+    background: none !important;
+}
