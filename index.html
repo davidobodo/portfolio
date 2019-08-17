@@ -13,9 +13,14 @@
 	<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/custom.css" />
+	<style>
+	body{
+		Position:relative;
+	}
+	</style>
 </head>
 
-<body class="is-preload landing">
+<body class="is-preload landing" data-spy="scroll">
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -23,19 +28,19 @@
 			<h1 id="logo"><a href="index.html">OD</a></h1>
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="#Home">Home</a></li>
 					<li>
-						<a href="#">About</a>
+						<a href="#About">About</a>
 					</li>
-					<li><a href="elements.html">Projects</a></li>
-					<li><a href="elements.html">Contact</a></li>
+					<li><a href="#Projects">Projects</a></li>
+					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Banner -->
 		<section id="banner">
-			<div class="content">
+			<div id="Home" class="content">
 				<header>
 					<h2>-I am OBODO DAVID</h2>
 					<p>A freelance Front-End Web Developer</p>
@@ -59,7 +64,7 @@
 			</div>
 
 
-			<div class="content">
+			<div id="About" class="content">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-12-medium">
@@ -82,7 +87,7 @@
 
 		<!-- Two -->
 		<section id="two" class="main_projects">
-			<div class="my_carousel">
+			<div id="Projects" class="my_carousel">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/y1.jpg" />
@@ -172,8 +177,8 @@
 
 
 		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
+		<footer id="footer ">
+			<ul id="Contact" class="icons">
 				<li><a href="https://web.facebook.com/david.obodo" class="icon brands alt fa-facebook-f"><span
 							class="label">Facebook</span></a></li>
 				<li><a href="https://www.linkedin.com/in/obodo-david-998786174/"

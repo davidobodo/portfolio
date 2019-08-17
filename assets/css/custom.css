@@ -1,4 +1,4 @@
-#header{
+body.landing header#header{
     position:fixed;
     background-color: blueviolet;
 }
@@ -10,6 +10,10 @@
 
 .text-center{
     text-align: center;
+}
+
+header#header nav#nav ul li a:active{
+    background-color: black;
 }
 
 .my_content{
@@ -30,10 +34,7 @@
     padding-bottom:100px;
 }
 
-.my_icon{
-    border-radius: 0 !important;
-    background: none !important;
-}
+
 
 .skill_set li{
     list-style: none;
@@ -83,6 +84,10 @@
     padding: 0 100px;
     padding-top: 45px;
     padding-bottom: 45px;
+}
+
+footer{
+    text-align: center;
 }
 
 @media (max-width:981px){
