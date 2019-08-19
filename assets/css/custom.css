@@ -44,6 +44,10 @@ header#header nav#nav ul li a:active{
     display:flex;
 }
 
+#About{
+    padding: 80px;
+}
+
 
 
 .first_projects{

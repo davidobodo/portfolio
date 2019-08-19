@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/custom.css" />
+	<link rel="stylesheet" href="aos.css" />
+
 	<style>
 	body{
 		Position:relative;
@@ -45,13 +47,12 @@
 					<h2>-I am OBODO DAVID</h2>
 					<p>A freelance Front-End Web Developer</p>
 				</header>
-				<span class="image"><img src="images/social_media.jpg" alt="my photo" /></span>
+				<span class="image" data-aos="flip-right"><img src="images/social_media.jpg" alt="my photo" /></span>
 			</div>
-			<a href="#one" class="goto-next scrolly">Next</a>
 		</section>
 
 		<!-- One -->
-		<section id="one">
+		<section id="one" data-aos="fade-right">
 			<div class="first_projects">
 				<div class="first_projects_inner">
 					<a href="" class="first_projects_img"><img src="images/bootstrap1.jpg" /></a>
@@ -67,17 +68,17 @@
 			<div id="About" class="content">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-12-medium">
+						<div class="col-4 col-12-medium" data-aos="fade-right">
 							<header>
 								<h2 class="text-right">About me</h2>
 							</header>
 						</div>
-						<div class="col-4 col-12-medium">
+						<div class="col-4 col-12-medium" data-aos="fade-down">
 							<p>I am a graduate of University of Benin, Edo state Nigeria.
 								My journey into web development started about a year ago, and since then it has been a
 								lot of fun. Join me by exploring some of my projects.</p>
 						</div>
-						<div class="col-4 col-12-medium text-center">
+						<div class="col-4 col-12-medium text-center" data-aos="fade-left">
 							<p>Above and Below<br/>are some of my projects</p>
 						</div>
 					</div>
@@ -87,7 +88,7 @@
 
 		<!-- Two -->
 		<section id="two" class="main_projects">
-			<div id="Projects" class="my_carousel">
+			<div id="Projects" class="my_carousel" data-aos="fade-right">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/y1.jpg" />
@@ -107,7 +108,7 @@
 				</div>
 			</div>
 
-			<div class="content my_content">
+			<div class="content my_content" data-aos="fade-left">
 				<header>
 					<h2>Simple HTML, CSS page</h2>
 				</header>
@@ -122,7 +123,7 @@
 
 		<!-- Three -->
 		<section id="three" class="main_projects">
-			<div class="content my_content2">
+			<div class="content my_content2" data-aos="fade-right">
 				<header>
 					<h2>REACT!!! components are the real deal :)</h2>
 					<p>I made use of React, Redux, Materialize and hosted on Firebase( i guess it's kind of like a
@@ -135,7 +136,7 @@
 							CODE</a></li>
 				</ul>
 			</div>
-			<div class="my_carousel">
+			<div class="my_carousel" data-aos="fade-left">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/d1.jpg" />
@@ -160,16 +161,16 @@
 		<!-- Four -->
 		<section id="four" class="wrapper style1 special fade-up">
 			<div class="container skill_set">
-				<h3>MY SKILL SET</h3>
+				<h3 data-aos="zoom-in-down">MY SKILL SET</h3>
 				<ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>JAVASCRIPT</li>
-					<li>BOOTSTRAP 4</li>
-					<li>SASS</li>
-					<li>REACT</li>
-					<li>REDUX</li>
-					<li>DEPLOYING ON FIREBASE</li>
+					<li data-aos="fade-right">HTML5</li>
+					<li data-aos="fade-left">CSS3</li>
+					<li data-aos="fade-right">JAVASCRIPT</li>
+					<li data-aos="fade-left">BOOTSTRAP 4</li>
+					<li data-aos="fade-right">SASS</li>
+					<li data-aos="fade-left">REACT</li>
+					<li data-aos="fade-right">REDUX</li>
+					<li data-aos="fade-left">DEPLOYING ON FIREBASE</li>
 				</ul>
 			</div>
 		</section>
@@ -193,7 +194,6 @@
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
@@ -202,6 +202,13 @@
 	<script src="assets/js/main.js"></script>
 	<script type="text/javascript" src="owl.carousel.min.js"></script>
 	<script type="text/javascript" src="carousel.js"></script>
+	<script src="aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 2000,
+			offset: 200
+		})
+	</script>
 
 </body>
 
