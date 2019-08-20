@@ -137,6 +137,16 @@ footer{
     .my_content2{
         order:50;   
     }
+
+    #About .row{
+        margin-top: 50px;
+        margin-bottom:100px;
+    }
+
+    .directions{
+        justify-content: center;
+        margin-top:20px;
+    }
 }
 
 
@@ -246,6 +256,10 @@ footer{
     left:45px;
     animation-delay:0s;
 
+}
+
+.directions{
+    display:flex;
 }
 
 p.directions_note{
