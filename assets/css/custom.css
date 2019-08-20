@@ -93,6 +93,11 @@ header#header nav#nav ul li a:active{
     background-size: cover;
 }
 
+#footer .icons li a {
+    color:#fff;
+    border-bottom:none;
+}
+
 footer{
     text-align: center;
 }
