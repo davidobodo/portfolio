@@ -3,6 +3,10 @@ body.landing header#header{
     background-color: #191b23;
 }
 
+#banner{
+    z-index:0;
+}
+
 
 .text-right{
     text-align: right;
@@ -46,6 +50,13 @@ header#header nav#nav ul li a:active{
 
 #About{
     padding: 80px;
+}
+
+#one .first_projects a img:hover{
+    transform: scale(2, 2);
+    transition: transform 0.5s;
+    border:1px solid black;
+    border-radius: 5px;
 }
 
 
