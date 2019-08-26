@@ -3,8 +3,21 @@ body.landing header#header{
     background-color: #191b23;
 }
 
-#banner{
-    z-index:0;
+#jumbotron{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") ;
+    background-size:cover;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Home{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
 
@@ -207,7 +220,7 @@ footer{
 
 }
 
-.indicator2{
+/* .indicator2{
     position:relative;
     width:30px;
     height:30px;
@@ -259,15 +272,9 @@ footer{
     left:45px;
     animation-delay:0s;
 
-}
+} */
 
-.directions{
-    display:flex;
-}
 
-p.directions_note{
-    margin:0 20px;
-}
 
 @keyframes animate{
     0%{
