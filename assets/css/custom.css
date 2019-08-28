@@ -349,3 +349,30 @@ div .card> div{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../images/fem2.jpg');
     background-size: cover;
 }
+
+/* button animation */
+.card button:nth-child(1){
+    transform: translateY(-80px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover button:nth-child(1){
+    transform: translateY(0);
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card button:nth-child(3){
+    transform: translateY(80px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover button:nth-child(3){
+    transform: translateY(0);
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
