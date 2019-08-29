@@ -266,9 +266,7 @@ h1 span:nth-child(10){
 h1 span:nth-child(11){
     animation-delay: 4s;
 }
-video{
-    object-fit: cover;
-}
+
 
 
 #card_projects{
