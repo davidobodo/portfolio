@@ -63,7 +63,7 @@ header#header nav#nav ul li a:active{
 }
 
 #About{
-    padding: 80px;
+    padding: 60px;
 }
 
 
@@ -92,46 +92,6 @@ header#header nav#nav ul li a:active{
 footer{
     text-align: center;
 }
-
-@media (max-width:981px){
-    #header{
-        display: block;
-    }
-
-    #one .content{
-        padding: 0 20px;
-    }
-    
-    .main_projects{
-        flex-direction: column;
-    }
-
-    .my_carousel{
-        width: 100% !important;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .my_content{
-        padding-top:100px;
-        padding-bottom:100px;
-    }
-    
-    .my_content2{
-        order:50;   
-    }
-
-    #About .row{
-        margin-top: 50px;
-        margin-bottom:100px;
-    }
-
-    .directions{
-        justify-content: center;
-        margin-top:20px;
-    }
-}
-
 
 
 /* arrow styles */
@@ -373,4 +333,58 @@ div .card> div{
     transition: 0.5s;
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width:981px){
+    #header{
+        display: block;
+    }
+
+    #jumbotron{
+        margin-top: 0;
+    }
+
+    #one .content{
+        padding: 0 20px;
+    }
+    
+    .main_projects{
+        flex-direction: column;
+    }
+
+    .my_carousel{
+        width: 100% !important;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .my_content{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    
+    .my_content2{
+        order:50;   
+    }
+
+    .directions{
+        justify-content: center;
+        margin-top:20px;
+    }
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 3rem;
+    }
+
+    #Home p{
+        font-size:1rem;
+    }
+}
+
+@media (max-width:576px){
+    h1{
+        font-size: 2rem;
+    }
 }

@@ -80,7 +80,7 @@
 
 		<!-- Two -->
 		<section id="two" class="main_projects">
-			<div id="Projects" class="my_carousel" data-aos="fade-right">
+			<div id="Projects" class="my_carousel anim" data-aos="fade-right">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/y1.JPG" />
@@ -100,7 +100,7 @@
 				</div>
 			</div>
 
-			<div class="content my_content" data-aos="fade-left">
+			<div class="content my_content anim" data-aos="fade-left">
 				<header>
 					<h2>Simple HTML, CSS page</h2>
 				</header>
@@ -115,7 +115,7 @@
 
 		<!-- Three -->
 		<section id="three" class="main_projects">
-			<div class="content my_content2" data-aos="fade-right">
+			<div class="content my_content2 anim" data-aos="fade-right">
 				<header>
 					<h2>REACT!!! components are the real deal :)</h2>
 					<p>I made use of React, Redux, Materialize and hosted on Firebase( i guess it's kind of like a
@@ -128,7 +128,7 @@
 							CODE</a></li>
 				</ul>
 			</div>
-			<div class="my_carousel" data-aos="fade-left">
+			<div class="my_carousel anim" data-aos="fade-left">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/d1.JPG" />
@@ -212,17 +212,17 @@
 		<!-- Four -->
 		<section id="four" class="wrapper style1 special fade-up">
 			<div class="container skill_set">
-				<h3 data-aos="zoom-in-down">MY SKILL SET</h3>
+				<h3 data-aos="zoom-in-down" class="anim">MY SKILL SET</h3>
 				<ul>
-					<li data-aos="fade-right">HTML5</li>
-					<li data-aos="fade-left">CSS3</li>
-					<li data-aos="fade-right">JAVASCRIPT</li>
-					<li data-aos="fade-left">JQuery</li>
-					<li data-aos="fade-right">BOOTSTRAP 4</li>
-					<li data-aos="fade-left">SASS</li>
-					<li data-aos="fade-right">REACT</li>
-					<li data-aos="fade-left">REDUX</li>
-					<li data-aos="fade-right">DEPLOYING ON FIREBASE</li>
+					<li data-aos="fade-right" class="anim">HTML5</li>
+					<li data-aos="fade-left" class="anim">CSS3</li>
+					<li data-aos="fade-right" class="anim">JAVASCRIPT</li>
+					<li data-aos="fade-left" class="anim">JQuery</li>
+					<li data-aos="fade-right" class="anim">BOOTSTRAP 4</li>
+					<li data-aos="fade-left" class="anim">SASS</li>
+					<li data-aos="fade-right" class="anim">REACT</li>
+					<li data-aos="fade-left" class="anim">REDUX</li>
+					<li data-aos="fade-right" class="anim">DEPLOYING ON FIREBASE</li>
 				</ul>
 			</div>
 		</section>
@@ -259,7 +259,27 @@
 		AOS.init({
 			duration: 2000,
 			offset: 200
+		});
+
+		let resize = function(){
+			var screenWidth = parseInt($('body').width())
+			var myAnim = $('.anim')
+			
+			if (screenWidth < 992){
+				console.log(myAnim[0].dataset.aos)
+				myAnim.attr('data-aos', 'none')
+				console.log('no more animation', myAnim[0].dataset.aos)
+				
+			}
+		}
+
+		$( window ).resize(function(){
+			resize()
 		})
+		$( document).ready(function(){
+			resize()
+		})
+
 	</script>
 
 	</body>
