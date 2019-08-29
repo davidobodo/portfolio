@@ -21,6 +21,11 @@ body.landing header#header{
     margin: 0 50px;
 }
 
+#header nav{
+    right:0;
+    left:0 !important;
+}
+
 
 .text-right{
     text-align: right;
@@ -415,6 +420,6 @@ div .card> div{
 
 @media (max-width:576px){
     h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
