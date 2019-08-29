@@ -274,6 +274,7 @@ div .card> div{
     color: #fff;
     border-radius: 8px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 
@@ -335,6 +336,12 @@ div .card> div{
     opacity: 1;
 }
 
+@media (max-width:1200px){
+    .card_projects_inner{
+        grid-template-columns: 240px 240px 240px;
+    }
+}
+
 @media (max-width:981px){
     #header{
         display: block;
@@ -350,6 +357,7 @@ div .card> div{
     
     .main_projects{
         flex-direction: column;
+        
     }
 
     .my_carousel{
@@ -361,16 +369,28 @@ div .card> div{
     .my_content{
         padding-top:100px;
         padding-bottom:100px;
-    }
-    
-    .my_content2{
-        order:50;   
+        order:-6;
     }
 
     .directions{
         justify-content: center;
         margin-top:20px;
     }
+
+    #card_projects{
+        height: auto;
+        padding-top:100px;
+    }
+
+    .card_projects_inner{
+        grid-template-columns: 240px 240px;
+    }
+
+    .card_projects_inner .card:nth-child(5){
+        grid-column: 1/ span 1;
+    }
+
+
 }
 
 @media (max-width:768px){
@@ -380,6 +400,10 @@ div .card> div{
 
     #Home p{
         font-size:1rem;
+    }
+
+    .card_projects_inner{
+        grid-template-columns: 240px;
     }
 }
 
