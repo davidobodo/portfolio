@@ -89,10 +89,6 @@ header#header nav#nav ul li a:active{
     background-size: cover;
 }
 
-#footer .icons li a {
-    color:#fff;
-    border-bottom:none;
-}
 
 footer{
     text-align: center;
@@ -423,3 +419,75 @@ div .card> div{
         font-size: 1.8rem;
     }
 }
+
+
+
+/* icon effects */
+ul#Contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ul#Contact li{
+    width: 60px;
+    height: 60px;
+    list-style: none;
+    margin: 0 50px;
+    padding-left: 0;
+    transform: rotate(-30deg) skew(25deg)
+}
+
+ul#Contact li a{
+    border-bottom: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    color: #ffffff;
+}
+
+ul#Contact li a span{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+ul#Contact li:hover a span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+    color:#ffffff; 
+}
+ul#Contact li:hover a span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8; 
+}
+ul#Contact li:hover a span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6; 
+}
+ul#Contact li:hover a span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4; 
+}
+ul#Contact li:hover a span:nth-child(1){
+    transform: translate(0, 0);
+    opacity: 0.2; 
+}
+
+ul#Contact li:nth-child(1) span{
+    background:#3b5998;
+}
+ul#Contact li:nth-child(2) span{
+    background: #0073b0;
+}
+ul#Contact li:nth-child(3) span{
+    background: #000000;
+}
+
+
