@@ -437,7 +437,7 @@ ul#Contact li:nth-child(3) span{
         grid-column: 1/ span 1;
     }
 
-   
+
 
 
 }
@@ -463,5 +463,9 @@ ul#Contact li:nth-child(3) span{
 
     ul#Contact li {
         margin: 0;
+    }
+
+    .indicator{
+        left: -30px;
     }
 }
