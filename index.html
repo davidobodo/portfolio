@@ -12,11 +12,12 @@
 	</noscript>
 	<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
-	<link rel="stylesheet" href="assets/css/me.css" />
 	<link rel="stylesheet" href="refactor/css/custom.css" />
 	<link rel="stylesheet" href="aos.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
 <body class="is-preload landing" data-spy="scroll">
 	<div id="page-wrapper">
 
@@ -36,7 +37,7 @@
 
 		<!-- Banner -->
 		<section id="jumbotron">
-			<div id="Home" class="content">				
+			<div id="Home" class="content">
 				<header>
 					<h1>
 						<span>O</span>
@@ -53,11 +54,11 @@
 					</h1>
 					<p>Front-End Developer</p>
 				</header>
-				
+
 			</div>
 		</section>
 
-		<div id="About" class="content">
+		<div id="About">
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-12-medium">
@@ -66,15 +67,16 @@
 						</header>
 					</div>
 					<div class="col-6 col-12-medium">
-						<p>Immediately I saw solutions I proffer, give feedback in real-time I knew that web-development was certainly what I wanted to engage my time with. Soon that self-evident hobby grew into what I desired to be a professional career. Diving into the various technologies such as html, css and what have you, I can confidently now say that I have discovered my passion in life.</p>
+						<p>Meticulous front end web developer with passion for responsive website design. freeCodeCamp certified. Very
+							conservant with React.js, yet proficient in vanilla javascript , hence can easily adapt depending on the requirement of
+							the job. Detaill - oriented, with a strong knack for writing clean and maintainable code</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- id two and Projects seem like they are not been used -->
 		<!-- Two -->
-		<section id="two" class="main_projects">
+		<section class="main_projects">
 			<div id="Projects" class="my_carousel anim" data-aos="fade-right">
 				<div class="owl-carousel owl-theme">
 					<div class="item">
@@ -95,12 +97,12 @@
 				</div>
 			</div>
 
-			<div class="content my_content anim" data-aos="fade-left">
+			<div class="my_content anim" data-aos="fade-left">
 				<header>
 					<h2>Simple HTML, CSS page</h2>
 				</header>
 				<p>Mark-up gotten from
-				figma. Tried my hands on it, and it came out well</p>
+					figma. Tried my hands on it, and it came out well</p>
 				<ul class="actions">
 					<li><a href="https://github.com/obododavid/yesNigeria" class="button">CODE</a></li>
 					<li><a href="https://obododavid.github.io/yesNigeria/" class="button">RESULT OF CODE</a></li>
@@ -109,8 +111,8 @@
 		</section>
 
 		<!-- Three -->
-		<section id="three" class="main_projects">
-			<div class="content my_content2 anim" data-aos="fade-right">
+		<section class="main_projects">
+			<div class="my_content2 anim" data-aos="fade-right">
 				<header>
 					<h2>REACT!!! components are the real deal :)</h2>
 					<p>I made use of React, Redux, Materialize and hosted on Firebase</p>
@@ -119,7 +121,7 @@
 				<ul class="actions">
 					<li><a href="https://github.com/obododavid/davePlan" class="button">CODE</a></li>
 					<li><a href="https://myfirst-fullstackproject.firebaseapp.com/signin" class="button">RESULT OF
-					CODE</a></li>
+							CODE</a></li>
 				</ul>
 			</div>
 			<div class="my_carousel anim" data-aos="fade-left">
@@ -146,10 +148,11 @@
 
 		<section id="card_projects">
 			<div class="indicator">
-				
 				<span></span>
 				<span></span>
-				<span><h3>Hover Me</h3></span>
+				<span>
+					<h3>Hover Me</h3>
+				</span>
 				<span></span>
 				<span></span>
 			</div>
@@ -290,22 +293,22 @@
 			offset: 200
 		});
 
-		let resize = function(){
+		let resize = function () {
 			var screenWidth = parseInt($('body').width())
 			var myAnim = $('.anim')
-			
-			if (screenWidth < 981){
+
+			if (screenWidth < 981) {
 				console.log(myAnim[0].dataset.aos)
 				myAnim.attr('data-aos', 'none')
 				console.log('no more animation', myAnim[0].dataset.aos)
-				
+
 			}
 		}
 
-		$( window ).resize(function(){
+		$(window).resize(function () {
 			resize()
 		})
-		$( document).ready(function(){
+		$(document).ready(function () {
 			resize()
 		})
 
